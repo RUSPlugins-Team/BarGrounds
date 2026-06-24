@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.rusplugins'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://repo.opencollab.dev/maven-snapshots/'
+    }
+    maven {
+        url = 'https://repo.opencollab.dev/maven-releases/'
+    }
+}
+
+dependencies {
+    compileOnly files('libs/nukkit.jar')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveBaseName = 'BarGrounds'
+}

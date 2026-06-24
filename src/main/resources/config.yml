@@ -1,0 +1,25 @@
+# Update period in server ticks (20 ticks = 1 second)
+update-ticks: 20
+
+# Language mode:
+# auto - detect by server language
+# en, ru, uk, fr, de - force language
+language-mode: "auto"
+
+# Date/time format for {DATE}
+date-format: "dd.MM.yyyy HH:mm"
+
+# Visual tweaks for sidebar text fitting
+max-line-length: 28
+center-date: true
+
+# Integration plugin names
+integrations:
+  economy: "EconomyAPI"
+  rank: "LuckPerms"
+  clan: "Clans"
+  rubies: "Rubies"
+  donate-coins: "DonateCoins"
+
+# Static footer line
+footer-link: "github.com/RUSPlugins-Team"

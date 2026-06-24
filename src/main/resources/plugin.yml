@@ -1,0 +1,17 @@
+name: BarGrounds
+main: ru.rusplugins.bargrounds.BarGroundsPlugin
+version: 1.0.0
+api: ["1.1.0"]
+author: RUSPlugins-Team
+description: Sidebar HUD with server info, economy and player stats.
+
+commands:
+  bargrounds:
+    description: Reload BarGrounds config.
+    usage: "/bargrounds reload"
+    permission: bargrounds.command
+
+permissions:
+  bargrounds.command:
+    description: Allows using /bargrounds reload
+    default: op
